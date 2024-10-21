@@ -9,10 +9,7 @@ def get_user_input():
     while True:
         try:
             user_guess = int(input("Guess a number between 1 - 100: "))
-            if 1 <= user_guess <= 100:
-                return user_guess
-            else:
-                print("Please enter a number between 1 - 100.")
+            return user_guess
         except ValueError:
             print("Invalid input! Please enter a valid number.")
 
